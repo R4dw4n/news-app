@@ -1,0 +1,17 @@
+.name{
+    padding: 12px;
+    font-weight: bold;
+    width: fit-content;
+    border: 2px solid black;
+    margin: 80px auto 20px ;
+    letter-spacing: 1px;
+}
+.name:hover{
+    background-color: #668cb0;
+    box-shadow: 3px 3px 8px #ddd;
+    color: #fefefe;
+    transition: .5s;
+    border-color: none;
+    scale: 1.1;
+    border-color: transparent;
+}

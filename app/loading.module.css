@@ -1,0 +1,90 @@
+.loading {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40vh;
+    color: transparent;
+
+}
+
+.l {
+    animation: fromLeft 1.5s 0s both;
+}
+
+.o {
+    animation: full 1.5s 1.5s both;
+}
+
+.a {
+    animation: fromButtom 1.5s 3s both;
+}
+
+.d {
+    animation: fromRight 1.5s 4.5s both;
+}
+
+.i,
+.g {
+    animation: full 1.5s 6s both;
+}
+
+.n {
+    animation: fromButtom 1.5s 7.5s both;
+}
+
+@keyframes full {
+    from {
+        transform: translateY(-100px);
+        color: transparent;
+    }
+
+    to {
+        transform: translateY(0);
+        color: rgb(175, 170, 170);
+    }
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(100px);
+        color: transparent;
+    }
+
+    to {
+        transform: translateX(0);
+        color: rgb(175, 170, 170);
+    }
+}
+
+@keyframes fromButtom {
+    from {
+        transform: translateY(100px);
+        color: transparent;
+    }
+
+    to {
+        transform: translateY(0);
+        color: rgb(175, 170, 170);
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translatex(-100px);
+        color: transparent;
+    }
+
+    to {
+        transform: translateX(0);
+        color: rgb(175, 170, 170);
+    }
+}
+.ex{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: bold;
+}

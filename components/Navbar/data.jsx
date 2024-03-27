@@ -1,0 +1,46 @@
+const data = [{
+    id:'1',
+    name:"general",
+    url:"/general",
+},
+{
+    id:'2',
+    name:"world",
+    url:"/world",
+},
+{
+    id:'3',
+    name:"nation",
+    url:"/nation",
+},
+{
+    id:'4',
+    name:"business",
+    url:"/business",
+},
+{
+    id:'5',
+    name:"technology",
+    url:"/technology",
+},
+{
+    id:'5',
+    name:"entertainment",
+    url:"/entertainment",
+},
+{
+    id:'6',
+    name:"sports",
+    url:"/sports",
+},
+{
+    id:'7',
+    name:"science",
+    url:"/science",
+},
+{
+    id:'8',
+    name:"health",
+    url:"/health",
+},]
+export default data

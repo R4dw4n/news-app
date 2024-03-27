@@ -1,0 +1,91 @@
+.formPer {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+.formPer h2{
+    font-weight: bold;
+}
+.textarea,
+.input {
+    padding: 15px;
+    margin: 10px;
+    margin-right: 25px;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+    width: 30vw;
+    background-color: #f0f2f5;
+    font-size: 20px;
+}
+.textarea:hover,.textarea:focus,
+.input:hover,
+.input:focus {
+    border: none;
+    scale: 1.1;
+    outline: none;
+}
+.textarea,
+.input::placeholder {
+    color: gray;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.textarea{
+    height: 150px;
+    font-size: 17px;
+}
+.submit {
+    padding: 10px;
+    margin: 10px;
+    margin-right: 25px;
+    width: 30vw;
+    background-color: #668cb0;
+    color: white;
+    font-size: 20px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;   
+}
+.error{
+    margin-top: -20px;
+    width: 30vw;
+    color: red;
+    font-size: 15px;
+    
+}
+.done{
+    margin: 20px auto;
+    color: gray;
+}
+@media (max-width:767px){
+ .formPer{
+    padding: 50px 0;
+    width: 90%;
+    position: relative;
+    margin: auto;
+ }   
+ .textarea{
+    width: 70vw;
+    margin: auto;
+ }
+ .input{
+    width: 70vw;
+    margin: auto;
+ }
+ .submit{
+    width: 70vw;
+    margin: auto;
+ }
+ .error{
+    width: 70vw;
+    margin: auto;
+ }
+}

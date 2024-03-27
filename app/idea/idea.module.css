@@ -1,0 +1,144 @@
+.idea {
+    padding-top: 60px;
+}
+
+.qus {
+    height: 150px;
+    background-color: #668cb0;
+    position: relative;
+    width: 100%;
+}
+
+.sqr {
+    position: absolute;
+    width: 30vw;
+    height: 200px;
+    background-color: #a0a3a5;
+    border-radius: 30px 15px;
+    box-shadow: 2px 4px 8px #c4c2c2;
+    top: 20%;
+    left: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    color: #fefefe;
+    padding: 20px;
+    text-align: center;
+    animation: bom 2s 3s infinite alternate-reverse;
+}
+.personal {
+    width: 100%;
+    height: 80vh;
+    margin-top: 140px;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+}
+@media (max-width:767px){
+    .personal{
+        flex-direction: column;
+    }
+  .sqr{
+    width: 70vw;
+    left: 15%;
+    font-size: 20px;
+  }
+}
+
+ .perTit{
+z-index: 10;
+color: #fefefe;
+padding: 30px;
+text-align: center;
+} 
+.perTit h2{
+    margin-bottom: 25px;
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.perTit p{
+    font-size: 18px;
+    line-height: 35px;
+    padding:20px ;
+}
+
+.firstSec {
+    width: 50%;
+    position: relative;
+    height: 130%;
+    z-index: -3;
+    background-image: url(../../components/assist/كيفية-تصميم-موقع-إخباري2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.firstSec::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #668cb0;
+    opacity: 0.7;
+}
+.img{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    animation: tranY 1s infinite alternate-reverse;
+    z-index: -1;
+}
+@media (max-width:767px){
+    .firstSec{
+        margin-top: 100px;
+        width: 90%;
+        margin: auto;
+
+    }
+    .img{
+        display: none;
+    }
+}
+@keyframes tranY{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}
+@keyframes bom {
+    0%,100%{
+        scale: 1;
+       box-shadow:  2px 4px 8px #c4c2c2;
+    }    50%{
+            scale: 1.1;
+          box-shadow:  4px 6px 10px #c4c2c2;
+          transform: rotate(2deg);
+          font-size: 28px;
+          letter-spacing: 1px;
+          text-shadow: 2px 2px 3px black;
+        }
+        
+    
+}
+@media (max-width:767px){
+    @keyframes bom {
+        0%,100%{
+            scale: 1;
+           box-shadow:  2px 4px 8px #c4c2c2;
+        }    50%{
+                scale: 1.1;
+              box-shadow:  4px 6px 10px #c4c2c2;
+              transform: rotate(2deg);
+              font-size: 22px;
+              letter-spacing: 1px;
+              text-shadow: 2px 2px 3px black;
+            }
+            
+        
+    }
+}

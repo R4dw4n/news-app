@@ -1,0 +1,145 @@
+.container {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.allTitls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 5px 15px;
+  overflow: auto;
+}
+
+.newsTitle {
+  width: 270px;
+  height: 430px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px black;
+}
+
+.newsTitle::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  background-color: #dddddd60;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+}
+
+.newsTitle:hover::after {
+  animation: flash .3s linear;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: black;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.newsTitle:first-child {
+  margin-left: 10px;
+}
+
+
+
+.infoTitle {
+  width: 80%;
+  min-height: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 5px;
+  position: absolute;
+  background-color: #413e3cb0;
+  bottom: 20px;
+  left: 10%;
+  z-index: 12;
+  opacity: 0.9;
+  box-shadow: 2px 2px 4px #ddd;
+}
+
+.infoTitle h2 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #fefefe;
+}
+
+.infoTitle p {
+  margin-bottom: 3px;
+}
+
+.infoTitle span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-top: 40px;
+}
+
+.newsTitle img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  height: 100%;
+}
+.more{
+  color: gray;
+}
+.arow {
+  transform: translateX(-10px);
+  margin-left: 20px;
+  margin-top: 5px;
+  animation: goLeft .9s infinite alternate-reverse;
+  color: gray;
+  padding-top: 5px;
+}
+
+@keyframes goLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes trans {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes flash {
+  from {
+    width: 0;
+    height: 0;
+  }
+
+  to {
+    width: 200%;
+    height: 200%;
+    rotate: 2deg;
+  }
+}

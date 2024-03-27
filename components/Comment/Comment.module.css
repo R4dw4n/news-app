@@ -1,0 +1,156 @@
+.container {
+    margin: 50px 0px;
+    position: relative;
+}
+
+.con {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+
+}
+
+.comments {
+    overflow: hidden;
+    width: fit-content;
+    height: 500px;
+    overflow: auto;
+    margin: 25px 0 ;
+}
+
+.comment {
+    border-radius: 5px;
+    width: 300px;
+    min-height: 170px;
+    background-color: #fefefe;
+    box-shadow: 0 0 3px #ddd;
+    padding: 15px;
+    margin: 20px auto;
+    position: relative;
+}
+@media (max-width:900px){
+    .comments{
+        display: flex;
+        gap: 20px;
+        height: fit-content;
+        overflow: scroll;
+    }
+    .comment{
+        min-width:300px;
+        height: 200px;
+    }
+}
+.comment p {
+    color: gray;
+    margin: 10px 0 35px;
+}
+
+.span1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #f9f9f9;
+}
+
+.span1::after {
+    content: '';
+    width: 30%;
+    height: 30px;
+    background-color: #d1dbe3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.span1::before {
+    content: '';
+    width: 20%;
+    height: 30px;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    transform: skewX(-30deg);
+    background-color: gray;
+    z-index: 4;
+}
+.like{
+    position: absolute;
+    right: 5px;
+    bottom: 1px;
+    display: flex;
+    gap: 10px;
+    color:gray ;
+    transition: .3s;
+}
+.addComm {
+    height: 470px;
+    width: 40vw;
+    border: 1px solid gray;
+    position: relative;
+}
+@media (max-width:900px){
+    .addComm{
+        width: 80vw;
+    }
+}
+.addComm h2 {
+    width: fit-content;
+    position: relative;
+    border: 5px solid white;
+    background-color: white;
+    top: -20px;
+    left: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.textarea,
+.info input {
+    margin: 0 42px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    background-color: #f9f9f9;
+}
+.info input:focus,
+.textarea:focus{
+    background-color:#f9f9f9 ;
+}
+
+.textarea:focus,
+.info input:focus {
+    border: none;
+    outline: none;
+    scale: 1.1;
+}
+
+.submit {
+    background-color: gray;
+    padding: 10px 15px;
+    color: white;
+    position: absolute;
+    border: none;
+    font-size: 18px;
+    right: 42px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.ex {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
