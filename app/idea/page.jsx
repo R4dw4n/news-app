@@ -16,7 +16,7 @@ const page = () => {
                         <div className={style.perTit}>
                             <h2 >Share your opinion with us</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cum ullam? Laborum delectus, provident neque assumenda repellendus dolor voluptate nisi odit architecto cumque officia placeat non error corporis accusantium laboriosam</p>
-                            <Image src={img} className={style.img} width={200}  height={300}/>
+                            <Image alt="idea" src={img} className={style.img} width={200}  height={300}/>
                         </div>
                     </div>
                     <Suggestion />

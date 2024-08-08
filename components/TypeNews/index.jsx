@@ -23,9 +23,9 @@ export default async function TypeNews(props) {
 
     const addJson = await add.json();
     const articles = addJson.articles;
-    tit = articles.map(item => {
+    tit = articles.map((item, ind) => {
       return (
-        <Link href={`/${firstL}${item.title}`}>
+        <Link href={`/${firstL}${item.title}`} key={ind}>
           <div className={styles.newsTitle}>
             <div className={styles.onhover}>
               <div className={styles.infoTitle}>

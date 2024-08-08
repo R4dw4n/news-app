@@ -33,10 +33,9 @@ const Comment = () => {
     const handelForm =()=>{
         ff.current.reset();
     }
-    let allComm = dataComm.map((item) => {
-        let [like, setLike] = useState(false);
-        let [dislike, setDisLike] = useState(false);
-
+    let [like, setLike] = useState(false);
+    let [dislike, setDisLike] = useState(false);
+    let allComm = dataComm.map((item, ind) => {
         const handellike = () => {
             setLike(!like)
             if (!like === true && dislike === true) setDisLike(false)
@@ -47,7 +46,7 @@ const Comment = () => {
         }
 
         return (
-            <div className={style.comment}>
+            <div className={style.comment} key={ind}>
                 <h3>{item.name}</h3>
                 <p>{item.comm}</p>
                 <span className={style.span1}>
